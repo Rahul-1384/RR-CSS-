@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{counter-reset: section;}
+            h2::before{counter-increment: section;
+                content:"Page " counter(section) ": ";
+            }
+        </style>
+    </head>
+    <body>
+        <h2>HTML</h2>
+        <h2>CSS</h2>
+        <h2>JS</h2>
+        <h2>How To</h2>
+        <h2>Node.js</h2>
+        <h2>React</h2>
+    </body>
+</html>
+
+
+
+
+<!-- Nested Counters -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{counter-reset: section;}
+            h1{counter-reset: subsection;}
+            h1::before{counter-increment: section;
+                content: "Section " counter(section) ". ";
+            }
+            h2::before{counter-increment: subsection;
+                content: counter(section) "." counter(subsection) ": " ;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HTML</h1>
+        <h2>CSS</h2>
+        <h2>JS</h2>
+        <h2>How To</h2>
+        <h2>Node.js</h2>
+        <h2>React</h2>
+    </body>
+</html>
+
+
+
+
+<!-- List Counters -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ol{counter-reset: section;
+                list-style-type: none;
+            }
+            li::before{counter-increment: section;
+                content: counters(section,".") " ";
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <ol>
+            <li>RRY</li>
+            <li>RRY
+                <ol>
+                    <li>RRY</li>
+                    <li>RRY</li>
+                    <li>RRY</li>
+                </ol>
+                </li>
+            <li>RRY</li>
+            <li>RRY
+                <ol>
+                    <li>RRY</li>
+                    <li>RRY</li>
+                </ol>
+                </li>
+        </ol>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+<!-- Practice Counters -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{counter-reset: section;}
+            h1{counter-reset: subsection;}
+            h1::before{counter-increment: section;
+                content: counters(section,".") " ";
+            }
+            h2::before{counter-increment: subsection;
+                content: counter(section) "." counter(subsection) "";
+            }
+            h3::before{
+                content: counter(section) "." counter(subsection) "." counter(section);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>History</h1>
+        <h2>About</h2>
+        <h2>Curriculum</h2>
+        <h3>Vitae</h3>
+    </body>
+</html>

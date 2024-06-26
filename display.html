@@ -1,0 +1,109 @@
+<!-- block level :- starts form a new line and takes as much width as they can -->
+<!-- div -->
+<!-- header -->
+<!-- section -->
+<!-- footer -->
+<!-- p -->
+<!-- form -->
+
+
+<!-- inline elements:- do not starts from a new line and takes as much width as neccessary -->
+<!-- span -->
+<!-- img -->
+<!-- a -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{border: 2px solid black;
+                margin: 10px;
+            }
+            span{border: 2px solid black;}
+        </style>
+    </head>
+    <body>
+        <div>this is block level element</div>
+        <div>this is block level element</div>
+        <div>this is block level element</div>
+
+        This is <span>inline element</span>
+    </body>
+</html>
+
+
+
+<!-- override display default values -->
+<!-- taking example of list -->
+<!-- as list is a block level element and we are going to make it inline -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            li{border: 2px solid black;
+                display: inline;        /* making the block-level to inline */
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>RRY</li>
+            <li>RRY</li>
+            <li>RRY</li>
+        </ul>
+    </body>
+</html>
+
+
+
+
+<!-- Note:- We can have an inline element in block level element but we cannot have a block element 
+in inline element -->
+<!-- span element as block element -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            span{display: block;
+                border: 2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <span>Hello RR</span>
+    </body>
+</html>
+
+
+
+
+
+
+<!-- how to hide an element -->
+<!-- 1) display:none -->
+<!-- it hides an element and the hidden element does not take space as the element was not there -->
+
+<!-- 2)visibility:hidden -->
+<!-- it also hides an element but it takes the space as the element was there but hidden -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .remove{display: none;}
+            .hidden{visibility: hidden;}
+        </style>
+    </head>
+    <body>
+        <h1>Display:none property</h1>
+        <p class="remove">This is hidden element</p>
+        <p>does not take space</p>
+        <h1>Display:none property</h1>
+        <p class="hidden">This is hidden element</p>
+        <p>does take space</p>
+    </body>
+</html>
+
+
+
+<!-- Inline does not let us to specify width and height of an element where Inline-block let us. -->
+<!-- Block adds a line break where Inline-block do not. -->

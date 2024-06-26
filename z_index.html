@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <style>
+            .black{position:absolute;
+                background-color: black;
+                top:0;
+                z-index: 2;
+            }
+            .green{position:absolute;
+                background-color: green;
+                top:0;
+                z-index: 1;
+            }
+        </style>
+    </head>
+<body>
+    <div class="black">this is black</div>
+    <div class="green">this is green</div>
+
+</body>
+</html>
+
+
+
+
+
+<!-- another example of z-index -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{box-sizing: border-box;
+                color: hotpink;
+            }
+            .container{position:relative;
+                border: 2px solid red;
+                top:100px;
+            }
+            .black{position:relative;
+                background-color: black;
+                border: 2px solid black;
+                height: 100px;
+                margin: auto;
+                width: 600px;
+                z-index: 1;
+            }
+            .grey{position:absolute;
+                background-color: grey;
+                border: 2px solid grey;
+                width: 300px;
+                height: 70px;
+                left: 500px;
+                top: 40px;
+                z-index: 3;
+            }
+            .green{position:absolute;
+                background-color: lightgreen;
+                border: 2px solid green;
+                width: 150px;
+                height: 80px;
+                left: 610px;
+                top: -10px;
+                z-index: 2;
+            }
+</style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="black">Black box</div>
+            <div class="grey">Grey box</div>
+            <div class="green">Green box</div>
+        </div>
+    </body>
+</html>

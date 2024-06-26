@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        div{
+            margin: 150px;
+            border: 30px solid rgb(163, 158, 158);
+            border-top: 15px solid blue;
+            border-bottom: 15px solid blue;
+            border-right: none;
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            /* filter: blur(20px); */
+           
+           
+            /* animation: spin 5s linear infinite; */
+            transition: 0.1s;
+            animation: spin 1ms linear;
+        }
+        div:hover{
+            background-image: linear-gradient(to right,red,yellow,pink,black,blue,violet,gray,purple);
+            
+        }
+        @keyframes spin {
+            0%{transform: translate(1px,1px); transform: rotate(0deg);}
+            10%{transform: translate(1px,-1px); transform: rotate(-9deg);}
+            20%{transform: translate(-3px,3px); transform: rotate(2deg);}
+            30%{transform: translate(-1px,1px); transform: rotate(-10deg);}
+            40%{transform: translate(-1px,1px); transform: rotate(-4deg);}
+            50%{transform: translate(-3px,3px); transform: rotate(2deg);}
+            60%{transform: translate(1px,-1px); transform: rotate(-9deg);}
+            70%{transform: translate(-1px,1px); transform: rotate(2deg);}
+            80%{transform: translate(3px,3px); transform: rotate(-4deg);}
+            90%{transform: translate(1px,-10px); transform: rotate(-9deg);}
+            100%{transform: translate(1px,-10px); transform: rotate(-9deg);}
+            
+            from{transform: scale(0.6);}
+            to{transform: scale(2);}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

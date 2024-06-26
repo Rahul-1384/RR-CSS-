@@ -1,0 +1,36 @@
+
+
+
+
+<!-- Image in forms(animation) -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            [type]{box-sizing: border-box;
+                padding: 10px;
+                border: 1px solid lightgrey;
+                border-radius: 5px;
+                background-image: url("search.jpg");
+                background-size: 30px;
+                background-position: 0px 3px;
+                background-color: whitesmoke;
+                background-repeat: no-repeat;
+                padding-left: 30px;
+                width: 0;
+                transition: 1s;
+                outline: none;
+                transition-delay: 0.1s;
+            }
+            [type]:focus{width: 200px;
+                border: 1px inset red;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <form>
+            <input type="search" placeholder="Search...">
+        </form>
+    </body>
+</html>

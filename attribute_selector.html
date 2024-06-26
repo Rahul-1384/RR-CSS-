@@ -1,0 +1,134 @@
+<!-- 1) [Attribute] -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            [target]{       /* This is attrubute selector */
+                background-color: yellow;}
+        </style>
+    </head>
+    <body>
+        <a href="#">This is link</a>
+        <a href="#" target="_blank">This is link</a>
+        <a href="#" target="_self">This is link</a>
+    </body>
+</html>
+
+
+
+
+<!-- 2) [Attribute="value"] -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            [target="_blank"]{      
+                background-color: yellow;}
+        </style>
+    </head>
+    <body>
+        <a href="#">This is link</a>
+        <a href="#" target="_blank">This is link</a>
+        <a href="#" target="_self">This is link</a>
+    </body>
+</html>
+
+
+
+
+<!-- 3) [Attribute ~="value"] -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            [class ~="mark"]{         /* selector is used to select elements with an attribute value 
+                                        containing a specified word. */
+                background-color: yellow;}
+        </style>
+    </head>
+    <body>
+        <a href="#" class="professional mark">This is link</a>
+        <a href="#" class="mark" target="_blank">This is link</a>
+        <a href="#" target="_self">This is link</a>
+    </body>
+</html>
+
+
+
+
+
+<!-- 4) [Attribute |="value"] -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            [class |="top"]{    /* selector is used to select elements with the specified attribute, 
+                                whose value can be exactly 
+                                the specified value, or the specified value followed by a hyphen (-) */
+                background-color: yellow;}
+        </style>
+    </head>
+    <body>
+        <a href="#" class="top-header">This is link</a>
+        <a href="#" class="top-text" target="_blank">This is link</a>
+        <a href="#" class="bottom" target="_self">This is link</a>
+    </body>
+</html>
+
+
+
+
+<!-- [Attribute ^= "value"] -->
+<!-- selector is used to select elements with the specified attribute, 
+    whose value starts with the specified value. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            [class^="top"]{      
+                background-color: yellow;}
+        </style>
+    </head>
+    <body>
+        <a href="#" class="top-header">This is link</a>
+        <a href="#" class="top-text" target="_blank">This is link</a>
+        <a href="#" class="topcontent" target="_self">This is link</a>
+    </body>
+</html>
+
+
+<!-- [Attribute $= "value"] -->
+<!-- selector is used to select elements whose attribute value ends with a specified value. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            [class$="top"]{      
+                background-color: yellow;}
+        </style>
+    </head>
+    <body>
+        <a href="#" class="headertop">This is link</a>
+        <a href="#" class="texttop" target="_blank">This is link</a>
+        <a href="#" class="contenttop" target="_self">This is link</a>
+    </body>
+</html>
+
+
+
+<!-- [Attribute *= "value"] -->
+<!-- selector is used to select elements whose attribute value contains a specified value. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            [class*="e"]{      
+                background-color: yellow;}
+        </style>
+    </head>
+    <body>
+        <a href="#" class="top-header">This is link</a>
+        <a href="#" class="top-text" target="_blank">This is link</a>
+        <a href="#" class="topcontent" target="_self">This is link</a>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<!-- Descendant selector{space} -->
+<!-- selects all <p> elements inside <div> elements -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div p{background-color: aqua;}
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>this is para1</p>
+            <p>this is para2</p>
+            <section>
+                <p>this is para3</p>
+            </section>
+        </div>
+        <p>this is para4</p>
+        <p>this is para5</p>
+    </body>
+</html>
+
+
+
+
+<!-- Child selector{>} -->
+<!-- sselects all <p> elements that are children of a <div> element -->
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <style>
+                div > p{background-color: aqua;}
+            </style>
+        </head>
+        <body>
+            <div>
+                <p>this is para1</p>
+                <p>this is para2</p>
+                <section>
+                    <!-- this is a descendant -->
+                    <p>paragraph 3(inside a section element)</p>
+                </section>
+                <p>this is para4</p>
+            </div>
+            <p>this is para5</p>
+            <p>this is para6</p>
+        </body>
+    </html>
+
+
+
+
+
+
+    <!-- adjacent sibling selector{+} -->
+    <!-- selects the first <p> element that are placed immediately after <div> elements -->
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <style>
+                    div + p{background-color: aqua;}
+                </style>
+            </head>
+            <body>
+                <div>
+                    <p>this is para1</p>
+                    <p>this is para2</p>
+                </div>
+                <p>this is para3</p>        <!-- selected-->
+                <p>this is para4</p>
+                <div>
+                    <p>this is para5</p>
+                    <p>this is para6</p>
+                </div>
+                <p>this is para7</p>        <!-- selected-->
+                <p>this is para8</p>
+            </body>
+        </html>
+
+
+<!-- selects all <p> elements that are next siblings of <div> elements {~}  -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div~p{background-color: aqua;}
+        </style>
+    </head>
+    <body>
+        <p>this is para1</p>
+        <div>
+            <p>this is para2</p>
+            <p>this is para3</p>
+        </div>
+        <p>this is para4</p>        <!--selected-->
+        <code>some code</code>
+        <p>this is para5</p>        <!--selected-->
+        <p>this is para6</p>        <!--selected-->
+
+    </body>
+</html>

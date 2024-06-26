@@ -1,0 +1,91 @@
+<!-- The CSS padding properties are used to generate space around an element's 
+    content, inside of any defined borders. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{border: 2px solid;
+            padding: 30px 30px 30px 30px;   /* (top,right,bottom,left) */
+
+        }
+            div{border: 2px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <p>this is para</p>
+        <div>this is para</div>
+    </body>
+</html>
+
+
+
+<!--  -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{border: 2px solid;
+            padding: 30px 30px 30px 30px;   /* (top,right,bottom,left) */
+            
+        }
+            div{border: 2px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <p>this is para</p>
+        <div>this is para</div>
+    </body>
+</html>
+
+
+
+
+
+
+<!-- width effect on padding -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #div1{background-color: yellow;
+                width: 300px;
+            
+            }
+            #div2{background-color: blue;
+                width: 300px;
+                padding: 25px;  /* width=(300+25+25) */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1" >this is para</div>
+        <div id="div2" >this is para</div>
+    </body>
+</html>
+
+
+<!-- box-sizing property -->
+<!-- if it is added then padding does not affect the width -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #div1{background-color: yellow;
+                width: 300px;
+            
+            }
+            #div2{background-color: blue;
+                width: 300px;
+                padding: 25px;  /* width=(300+25+25) */
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1" >this is para</div>
+        <div id="div2" >this Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda similique odit ducimus ex id sit distinctio reiciendis ab rem. Voluptatem distinctio perferendis sequi tempora itaque mollitia ratione ipsum natus! Accusantium?is para</div>
+    </body>
+</html>

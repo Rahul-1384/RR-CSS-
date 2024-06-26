@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+            *{
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .parent{
+                height: 300px;
+                width: 200px;
+                background-color: green;
+                border: 2px solid black;
+            }
+            p{
+                color: white;
+                font-weight: bold;
+                background-color: gray;
+                padding: 5px 0px 5px 50px;
+            }
+            img{
+                width: 180px;
+                height: 150px;
+                border-radius: 50%;
+                margin: 10px;
+            }
+            .children:nth-child(3){
+                float: left;
+                margin-left: 40px;
+                margin-right: 10px;
+                color: white;
+            }
+            .children:nth-child(4){
+                margin-right: 10px;
+                float: left;
+                width: 80px;
+                background-color: white;
+                height: 20px;
+                border: 2px solid black;
+            }
+            .children:nth-child(6)::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .children:nth-child(6){
+                background-color: yellow;
+                margin: 5px 59px;
+                width: 80px;
+                height: 30px;
+                border-radius: 10px;
+            }
+        </style>
+</head>
+<body>
+    <div class="parent">
+        <p>Urabanbax</p>
+        <div class="children">
+            <img src="shoes.webp">
+        </div>
+        <span class="children">+</span>
+        <p class="children"></p>
+        <span class="children" style="color: white;">-</span>
+        <button class="children">Add to cart</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{box-sizing: border-box;}
+            div{background-color: lightgrey;
+            }
+            form{padding: 20px;}
+            [type="text"]{padding: 10px;
+                display: block;
+                margin-top: 10px;
+                border: 1px inset lightgrey;
+                border-radius: 5px;
+                width: 100%;
+            }
+            select{width: 100%;
+                padding: 10px;
+                margin-top: 10px;
+                text-align: center;
+                font-size: 15px;
+                border-radius: 5px;
+            }
+            [type="reset"]{width: 100%;
+                padding: 10px;
+                margin-top: 35px;
+                text-align: center;
+                font-size: 15px;
+                background-color: greenyellow;
+                cursor: pointer;
+                border-radius: 5px;
+
+            }
+            [type="submit"]{width: 100%;
+                padding: 10px;
+                margin-top: 7px;
+                text-align: center;
+                font-size: 15px;
+                background-color: greenyellow;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form>
+                <fieldset>
+                    <legend>Personal:</legend>
+                    <label>First Name</label>
+                    <input type="text" placeholder="Your name.."><br>
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Your last name.."><br>
+                </fieldset>
+                <label>City</label>
+                <select>
+                    <option aria-placeholder="" hidden>Select</option>
+                    <option aria-placeholder="">Mathura</option>
+                    <option aria-placeholder="">Jhansi</option>
+                </select><br>
+                <button type="reset">Reset</button><br>
+                <input type="submit" value="Submit"><br>
+            </form>
+        </div>
+    </body>
+</html>

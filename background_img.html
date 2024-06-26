@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{background-image: url("favicon-32x32.png");    /* background image */
+                background-repeat: no-repeat;   /* if you don't want to repeat image */
+                background-repeat: repeat-x;    /* if want to repeat only at x-axis */
+                background-repeat: repeat-y;    /* if want to repeat only at y-axis */
+                background-size: cover;         /* if want to add image as a cover */
+                background-position: right top;
+                margin-right: 200px;
+                }
+        </style>
+    </head>
+    <body>
+        <p>this is para Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi ut amet, reiciendis exercitationem perspiciatis consectetur reprehenderit dignissimos laboriosam asperiores nam repellendus voluptas eveniet, ipsam quisquam quae aperiam ipsa qui fuga!Lorem</p>
+    </body>
+</html>
+
+
+<!-- background attachment -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{background-image: url("cr7.jpg");
+                background-repeat: no-repeat; 
+                background-position: right top;
+                background-size: 200px;     /* specifies the size of image */
+                margin-right: 200px;  
+                background-attachment: fixed;  /* if want to scroll the image with scrolling page */
+                background-attachment: scroll; /* if don't want to scroll the image with scrolling page */
+                }
+        </style>
+    </head>
+    <body>
+        <pre>this is 
+            para Lorem ipsum dolor
+             sit amet consectetur
+            </pre>
+    </body>
+</html>
+
+
+<!-- background shorthand -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* instead of writing this */
+            body{background-color: #ffffff;
+                background-image: url("cr7.jpg");
+                background-repeat: no-repeat;
+                background-position: right top;               
+                }
+            
+            /* we can write in a single line */
+            /* note:The order is (red,url,repeat,position) */
+            body{background:red url("cr7.jpg") no-repeat right top;}
+        </style>
+    </head>
+    <body>
+        <p>this is para Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi ut amet, reiciendis exercitationem perspiciatis consectetur reprehenderit dignissimos laboriosam asperiores nam repellendus voluptas eveniet, ipsam quisquam quae aperiam ipsa qui fuga!Lorem</p>
+    </body>
+</html>

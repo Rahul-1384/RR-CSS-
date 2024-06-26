@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{outline-style: solid;}    /* outline style defines the type of border(solid,dotted,etc) */
+        </style>
+    </head>
+    <body>
+        <p>this is para</p>
+    </body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{border: 6px solid black;
+                outline-style: solid;    /* outline style defines the type of border(solid,dotted,etc) */
+                outline-width: thick;
+                outline-color:red;
+                outline-color: invert;  /* this makes the outline of same color as the background */
+            }
+        </style>
+    </head>
+    <body>
+        <p>this is para</p>
+    </body>
+</html>
+
+
+
+
+<!-- outline shorthand -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{border: 6px solid black;
+              outline: 10px solid blue;
+            }
+        </style>
+    </head>
+    <body>
+        <p>this is para</p>
+    </body>
+</html>
+
+
+
+<!-- outline offset -->
+<!-- it adds the space between the outline and border of an element -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{border: 6px solid black;
+                outline: 10px solid red;
+                outline-offset: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>this is para</p>
+    </body>
+</html>

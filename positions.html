@@ -1,0 +1,146 @@
+<!-- position is used to position the elemtns in the web page -->
+
+<!-- 1) static -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{position: static;       /* default like a normal paged position */
+                
+                border: 2px solid black;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div>This is div element</div>
+    </body>
+</html>
+
+
+
+<!-- 2) relative -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+             /* it can be adjusted top,right,bottom,left */
+             /* Other content will not be adjusted to fit into any gap left by the element. */
+            div{position: relative;       
+               left: 300px;
+                
+                border: 2px solid black;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div>This is div element</div>
+    </body>
+</html>
+
+
+
+
+
+
+<!-- 3) absolute -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .relative{position: relative;
+                border: 2px solid black;
+                width: 200px;
+                height: 200px;
+            }
+
+            .absolute{position: absolute;   /* absolute has an ancestor relative and will positioned
+                                                wrt realtive element not wrt viewport. */
+                border: 2px solid black;
+                top:150px;
+                left: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="relative">This is relative div
+            <div class="absolute">this is absolute div</div>
+        </div>
+    </body>
+</html>
+
+
+
+
+<!-- 4) fixed -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{position: fixed;        /* even if you scroll the position will be fixed */
+                right: 0;
+                bottom: 0;
+                border: 2px solid black;
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>This is fixed positioned</div>
+    </body>
+</html>
+
+
+
+
+
+
+
+<!-- 5) Sticky -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .sticky{position: sticky;        /* it gets sticked on the fixed position
+                                           that's why it toggles between realtive and fixed position */
+                top: 0;
+                border: 10px solid black;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This is sticky positioned element</h1>
+        <div class="sticky">This is fixed positioned</div>
+        <div style="padding-bottom: 2000px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perspiciatis aliquam cum incidunt ipsa vel non deserunt ullam atque doloribus! Suscipit commodi eos pariatur asperiores aperiam illum incidunt? Ex asperiores perspiciatis dolor cumque fugit tempore quos autem enim, totam, dicta officia laborum, quo corrupti. Nesciunt dolorum cumque enim vel deserunt!</div>
+    </body>
+</html>
+
+
+
+
+
+<!-- positioning of text in image -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container{position: relative;
+                border: 7px solid red;
+                max-width: fit-content;
+            }
+            .content{position: absolute;
+                border: 7px solid yellow;
+                top: 0;
+                left: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="cr7.jpg" width="400px" height="400px">
+            <div class="content">Text position</div>
+        </div>
+    </body>
+</html>

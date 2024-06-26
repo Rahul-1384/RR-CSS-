@@ -1,0 +1,26 @@
+<!-- If we don't want an element next to the float element then we uses clear -->
+<!-- none
+    left 
+    right
+    both-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .first{border: 2px solid red;
+                width: fit-content;
+                float: left;
+            }
+            .second{border: 2px solid black;
+                clear: left;        /* clear:left will only work for float:left */
+            }                       /* clear:right will only work for float:right */
+</style>
+    </head>
+    <body>
+        <div class="first">Div 1</div>
+        <div class="second">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates soluta excepturi tempora? Optio ab, fugiat suscipit iusto itaque, in illo quo veniam 
+            ratione commodi pariatur quod eum possimus modi consequuntur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iure perferendis tenetur nam obcaecati quasi sequi assumenda. Amet voluptatibus quibusdam temporibus delectus maxime, expedita optio labore repellendus perspiciatis deleniti vel!</div>
+
+    </body>
+</html>

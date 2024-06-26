@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <style>
+            
+        *{box-sizing: border-box;
+            color: azure;
+            }
+            ul{list-style-type: none;
+                margin: 0;
+                padding: 18px;                
+                background-color: red;
+                border: 2px solid red;
+            }
+            #buttons a{display: inline-block;
+                text-decoration: none;
+                padding: 10px;
+                text-indent: 0;
+            }
+            img{margin-top: 14px;}
+            #buttons{float: left;
+                margin-top: -19px;
+            }
+
+            .dropdown{position: relative;
+                display: inline-block;
+            }
+            .content{display: none;
+                position: absolute;
+            }
+            .content a{display: block;
+            background-color:black;
+            min-width: 160px;
+        }
+            #buttons:hover{background-color: blue;}
+            .content a:hover{background-color: aqua;
+                color:black;
+            }
+            .dropdown:hover .content{display: block;
+                
+            }
+        </style>
+    </head>
+</html>
+<body>
+    <ul>
+        <div class="link">
+        <a id="buttons" href="#"><img src="w3schools-logo-icon.png" width="20px" height="20px"></a>
+        <li id="buttons"><a href="#">HOME</a></li>
+        <li id="buttons"><a href="#">ABOUT</a></li>
+        <li id="buttons" class="dropdown">
+            <a href="#">DROPDOWN</a>
+            <div class="content">
+                <a href="#">LINK 1</a>
+                <a href="#">LINK 2</a>
+                <a href="#">LINK 3</a>                
+            </div>
+        </li>
+    </div>
+    </ul>
+</body>

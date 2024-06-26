@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            img{
+                float: left;    /* it will float the image towards left */
+            }
+            
+        </style>
+    </head>
+    <body>
+        <p>
+            <img src="img_tree.png" width="50px" height="50px">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum officia tenetur possimus commodi, perspiciatis quo adipisci error in, quisquam sit ipsum fugit dolore explicabo quasi cumque atque laudantium quae accusantium.
+        </p>
+       
+    </body>
+</html> 
+
+
+
+
+<!-- clearfix:- it controls the overflow content.Try to execute -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{border: 2px solid black;
+                
+            }
+            img{
+                float: left;    
+            }
+
+        .clearfix{          /* it will control the overflow */
+            overflow: auto;
+        }
+          
+            
+        </style>
+    </head>
+    <body>
+        <p class="clearfix">
+            <img src="img_tree.png" width="50px" height="50px">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum officia tenetur possimus commodi, perspiciatis quo adipisci error in, quisquam sit ipsum fugit dolore explicabo quasi cumque atque laudantium quae accusantium.
+        </p>
+       
+    </body>
+</html> 
+
+
+
+
+<!-- Modern technique of clearfix -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{border: 2px solid black;}
+            img{float: left;}
+
+            .clearfix::after{
+                content: "Modern clearfix applied";
+                clear: left;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="clearfix">
+            <img src="img_tree.png">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolor nesciunt omnis ducimus architecto asperiores non perferendis debitis a dignissimos, voluptates officiis accusamus quidem necessitatibus ullam consequatur, quod nisi mollitia.
+        </p>
+    </body>
+</html>
+
+
+
+
+
+
+<!-- float next to each othe -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                float: left;    
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div>Link</div>
+        <div>Link</div>
+        <div>Link</div>
+    </body>
+</html> 
+
+
+
+
+<!-- Example -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{box-sizing: border-box;}
+            .box{border: 2px solid black;
+                background-color: grey;
+                float: left;
+                width: 33.33%;
+                padding: 50px;
+            }
+            .clearfix::after{
+                content: "";
+                clear: left;
+                display: block;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="clearfix">
+            <div class="box">
+                <p>Box 1</p>
+            </div>
+            <div class="box">
+                <p>Box 2</p>
+            </div>
+            <div class="box">
+                <p>Box 3</p>
+            </div>
+            <div class="box">
+                <p>Box 4</p>
+            </div>
+        </div>
+        <p>this is para</p>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<!-- The CSS margin properties are used to create space around elements -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{border: 2px solid red;
+            margin: 30px 10px 10px 30px;    /* (top,right,bottom,left) */
+            }
+
+            div{border: 2px solid red;
+            margin: 90px 10px 30px 50px;}   /* (top,right,bottom,left) */
+
+            div{border: 2px solid red;
+            margin:auto;
+            width:300px;}
+        </style>
+    </head>
+    <body>
+        <p>this is para 1</p>        
+        <div>this is para 2</div>
+    </body>
+</html>
+
+
+
+
+<!-- child inherits -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           div{border: 3px solid red;
+            margin-left: 200px;}
+
+            p{margin-left: inherit;}
+        </style>
+    </head>
+    <body>
+        <div>
+        <p>this is para 1</p>        
+        </div>
+       
+    </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{border: 2px solid black;}
+            #r{border: 2px solid red;
+            }
+            #y{border: 2px solid blue;}
+        </style>
+    </head>
+    <body>
+        <p>this is a para</p>
+        <div id="r">this is div</div>
+        <p id="y">this is para</p>
+        <p>this is para</p>
+    </body>
+</html>
+
+
+
+<!-- Margin collapse -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{border: 2px solid red;
+                margin-bottom: 50px;
+            }
+            h2{border: 2px solid blue;
+                margin-top: 20px;
+            }
+            /* margin between h1 and h2 will be of 50(highest of two) */
+
+            
+/* Top and bottom margins of elements are sometimes collapsed into a single margin
+ that is equal to the largest of the two margins.
+This does not happen on left and right margins! Only top and bottom margins!*/
+        </style>
+    </head>
+    <body>
+        <h1>this is a para</h1>
+        
+        <h2>this is para</h2>
+    </body>
+</html>
