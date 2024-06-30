@@ -5,17 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .parent{
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */ grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
             border: 2px solid black;
-            height: 100vh;
-            max-width: 700px;
-            margin: 0 auto 0 auto;   
+            gap: 20px;
+            padding: 20px;
+            background-color: rgb(0, 170, 255);
+        }
+        .item{
+            background-color: white;
+            border: 1px solid black;
+            height: 70px;
+        }
+        #box1{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            text-align: center;
+            font-size: 40px;
+        }
+        #box2{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            height: 160px;
+            font-size: 40px;
+            text-align: center;
+            line-height: 140px;
+        }
+        #box3{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            text-align: center;
+            font-size: 40px;
+        }
+        #box4{
+            text-align: center;
+            font-size: 40px;
+        }
+        #box5{
+            grid-column-start: 2;
+            grid-column-end: 5;
+            text-align: center;
+            font-size: 40px;
         }
         
     </style>
 </head>
 <body>
-    <div class="parent">
+    <div class="container">
+        <div class="item" id="box1">Header</div>
+        <div class="item" id="box2">Menu</div>
+        <div class="item" id="box3">Main</div>
+        <div class="item" id="box4">Right</div>
+        <div class="item" id="box5">Footer</div>
         
     </div>
 </body>
