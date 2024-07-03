@@ -11,43 +11,86 @@
             box-sizing: border-box;
         }
         .container{
+            max-width: ;
             background-color: red;
             display: grid;
-            gap: 10px;
-            grid-template-columns: 1fr 2fr;
-            grid-template-rows: 200px 300px 400px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px 100px;
             grid-template-areas: 
-            "hd"
-            "men "
-            "ft";
+            "hd hd hd"
+            "men mn rt"
+            "men ft ft";
+            gap: 10px;
+            padding: 10px;
+            /* margin: 0 auto; */
+            
         }
         .item{
             background-color: aqua;
+            border: 1px solid green;
+            
         }
         #header{
             grid-area: hd;
+            font-size: 50px;
+            align-content:center;
+            text-align: center;
         }
         #menu{
             grid-area: men;
+            font-size: 50px;
+            align-content:center;
+            text-align: center;
         }
         #main{
             grid-area: mn;
+            font-size: 50px;
+            align-content:center;
+            text-align: center;
         }
         #right{
             grid-area: rt;
+            font-size: 50px;
+            align-content:center;
+            text-align: center;
         }
+        
         #footer{
             grid-area: ft;
+            font-size: 50px;
+            align-content:center;
+            text-align: center;
         }
+
+        @media only screen and (max-width: 377.60px) {
+            .container{
+                background-color: aqua;
+                grid-template-rows: 60px 60px 60px;
+            }
+            #header,#menu,#main,#right,#footer{
+                font-size: 34px;
+            }
+        }
+        @media only screen and (max-width: 271.20px) {
+            .container{
+                background-color: gray;
+                grid-template-rows: 20px 20px 20px;
+            }
+            #header,#menu,#main,#right,#footer{
+                font-size: 14px;
+            }
+        }
+  
+
     </style>
 </head>
 <body>
         <div class="container">
-            <div class="item" id="header">1</div>
-            <div class="item" id="menu">2</div>
-            <div class="item" id="main">3</div>
-            <div class="item" id="right">4</div>
-            <div class="item" id="footer">5</div>
+            <div class="item" id="header">Header</div>
+            <div class="item" id="menu">Menu</div>
+            <div class="item" id="main">Main</div>
+            <div class="item" id="right">Right</div>
+            <div class="item" id="footer">Footer</div>
         </div>
 </body>
 </html>
