@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Areas</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: red;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 200px 300px 400px;
+            grid-template-areas: 
+            "hd"
+            "men "
+            "ft";
+        }
+        .item{
+            background-color: aqua;
+        }
+        #header{
+            grid-area: hd;
+        }
+        #menu{
+            grid-area: men;
+        }
+        #main{
+            grid-area: mn;
+        }
+        #right{
+            grid-area: rt;
+        }
+        #footer{
+            grid-area: ft;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="item" id="header">1</div>
+            <div class="item" id="menu">2</div>
+            <div class="item" id="main">3</div>
+            <div class="item" id="right">4</div>
+            <div class="item" id="footer">5</div>
+        </div>
+</body>
+</html>
